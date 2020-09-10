@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0">
+
+    <!-- Site Metas -->
+    <title>NFF</title>
+    <meta name="keywords" content="nff">
+    <meta name="description" content="foodfestival nitj">
+   <script type="text/javascript">
+       function main() {
+  setTimeout(function(){ location.reload(); }, 3000);
+}
+   </script>
+
+    <meta name="author" content="">
+    <head>
+<style type="text/css">
+    #fd:hover{
+        background-color: grey;
+        color:black;
+    }
+    #btn:hover{
+        background-color: red;
+        color:white;
+
+    }
+.dropbtn {
+  background-color: #FFA500;
+  color: white;
+  padding: 6px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 2px 4px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #3e8e41;
+}
+</style>
+</head>
+    
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("march 22, 2020 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+  // Output the result in an element with id="demo"
+  document.getElementById("demo").innerHTML = days + "d " + hours + "h "
+  + minutes + "m " + seconds + "s ";
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- color -->
+    <link id="changeable-colors" rel="stylesheet" href="css/colors/orange.css" />
+
+    <!-- Modernizer -->
+    <script src="js/modernizer.js"></script>
+
+  <!--  [if lt IE 9]
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    [endif]-->
+
+   
+</head>
+
+
+<body>
+    <div id="loader">
+        <div id="status"></div>
+    </div>
+    <div id="site-header">
+        <header id="header" class="header-block-top">
+            <div class="container">
+                <div class="row">
+                    <div class="main-menu">
+                        <!-- navbar -->
+                        <nav class="navbar navbar-default" id="mainNav">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                    <span class="sr-only">Toggle navigation</span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                                <div class="logo">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <img src="images/clg.png" alt="" >
+                                    </a>
+                                </div>
+
+                                <div class="logo" style="margin-left: 40px;">
+                                    <a class="navbar-brand js-scroll-trigger logo-header" href="#">
+                                        <img src="images/logo2.png" alt="" style="margin-top: 10px" width="150">
+                                    </a>
+                                </div>
+                                
+                            </div>
+                            <div id="navbar" class="navbar-collapse collapse">
+                                <ul class="nav navbar-nav navbar-right">
+                                    <li class="active"><a href="#banner">Home</a></li>
+                                    <li><a href="#about">About us</a></li>
+                                    
+                                    <li><a href="#gallery">Gallery</a></li>
+                                    <li><a href="#pricing">Events</a></li>
+                                    
+                                    <li><a href="#here">Registration</a></li>
+                                   
+                                    <li><a href="#sponsor">Our Sponsors</a></li>
+                                    <li><a href="team.html">Team NFF</a></li>
+                                     
+                                </ul>
+
+                            </div>
+
+                            <!-- end nav-collapse -->
+                        </nav>
+                        <!-- end navbar -->
+
+
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container-fluid -->
+        </header>
+        <!-- end header -->
+    </div>
+	<!-- end site-header -->
+	
+    <div id="banner" class="banner full-screen-mode parallax">
+        <div class="container pr">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div class="banner-static">
+                    <div class="banner-text">
+                        <div class="banner-cell">
+                            <h1>NITJ FOOD FEST <span class="typer" id="some-id" data-delay="200" data-delim=":" data-words="2020:is here" data-colors="red"></span><span class="cursor" data-cursorDisplay="_" data-owner="some-id"></span></h1>
+                            <h2 id="demo"> </h2>
+                            <h2><p style="color: yellow; font-size: 30px; font: helvetica;"><strong>"The first 100 people to register will get certified gift coupons"</strong></p></h2>
+                            
+                             <div class="book-btn">
+                                <a href="#here" class="table-btn hvr-underline-from-center">Register</a>
+                            </div>
+                            <a href="#about">
+                                <div class="mouse"></div>
+                            </a>
+                        </div>
+                        <!-- end banner-cell -->
+                    </div>
+                    <!-- end banner-text -->
+                </div>
+                <!-- end banner-static -->
+            </div>
+            <!-- end col -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end banner -->
+
+    <div id="about" class="about-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title"> About Us </h2>
+                        <h3>NITJ Food Festival 2020 :It’s a feast ,not a fest ....</h3>
+                        <p> As a part of our commitment to the all-round development of students and the welfare of society , we at Dr. B R Ambedkar National Institute Of Technology ,Jalandhar , Punjab, India are organizing the second edition of NITJ Food Festival which attracts thousands of students from across the country to participate in a 2 days extravaganza comprising of food competitions like making a Guinness Book Of World Record, Food-Fie Mania, Master-Chef NITJ , Foodie-Fights and various pre-fest workshops. We are expecting a huge crowd as well as enthusiasm from people in and out at Jalandhar and Punjab. </p>
+
+                        <p> Our Ultimate Aim :The ultimate aim of this Food Festival is setting up of an NGO/Funds generated will be donated to an already running NGO that will work for hunger elimination from India . The two major aims of this NGO will be :
+                            <br>
+
+a)Feeding the underprivileged(Proper Utilization of Food) :The wastage of food is really very unhealthy not only for poor but for our country aswell. So the major purpose will be proper utilization of leftover food from parties ,restaurants, hostel mess,etc to someone who is really in need .
+<br>
+
+b)Setting up of Kitchens: To provide nutritious food to people at a nominal price ,we will be setting up kitchens under this NGO programme that will help us in our mission to have a #HungerFreeIndia. </p>
+
+                        
+                    </div>
+                </div>
+                <!-- end col -->
+                <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <div class="about-images">
+                            <img class="about-main" src="images/about-main.jpg" alt="About Main Image">
+                            <img class="about-inset" src="images/about-inset.jpg" alt="About Inset Image">
+                        </div>
+                    </div>
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+
+    <div class="special-menu pad-top-100 parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title color-white text-center"> Online Events Winner </h2>
+                        <h5 class="title-caption text-center">  Kuch Meetha Ho Jaye </h5>
+                    </div>
+                    <div class="special-box">
+                        <div id="owl-demo">
+                            <div class="item item-type-zoom">
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                           Winner 
+                                            <div class="line"></div>
+                                            <div class="dit-line">Entry No 10 Name:Kanika Mehrotra
+Locality:Agra,Uttar Pradesh</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/win1.jpeg" height="300" alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                           Ist Runner Up
+                                            <div class="line"></div>
+                                            <div class="dit-line">Entry No 3 Name:Rashmi,Rama Kalyani,Mounika
+Locality:Telugu states</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/win2.jpg"  height="300"  alt="sp-menu">
+                                </div>
+                            </div>
+                            <div class="item item-type-zoom">
+                                <a href="#" class="item-hover">
+                                    <div class="item-info">
+                                        <div class="headline">
+                                           Second Runner Up
+                                            <div class="line"></div>
+                                            <div class="dit-line">Entry No.35
+Name:Shristy Banga
+Locality: Jalandhar</div>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item-img">
+                                    <img src="images/win3.jpg" alt="sp-menu">
+                                </div>
+                            </div>
+
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end special-menu -->
+
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end menu -->
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                    </div>
+                    <!-- end team-box -->
+
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end team-main -->
+
+    <div id="gallery" class="gallery-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                        <h2 class="block-title text-center">
+						Our Gallery	
+					</h2>
+                        <p class="title-caption text-center">There are Images Of last year  </p>
+                    </div>
+                    <div class="gal-container clearfix">
+                        <div class="col-md-12 col-sm-12 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#1">
+                                    <img src="images/1.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="1" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/1.jpg" alt="" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#2">
+                                    <img src="images/1.jpeg" alt="" />
+                                </a>
+                                <div class="modal fade" id="2" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_02.jpg" alt="" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#3">
+                                    <img src="images/gallery_03.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="3" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_03.jpg" alt="" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#4">
+                                    <img src="images/gallery_04.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="4" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_04.jpeg" alt="" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#5">
+                                    <img src="images/gallery_05.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="5" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_05.jpg" alt="" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#9">
+                                    <img src="images/gallery_06.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="9" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_06.jpg" alt="" />
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-8 col-sm-12 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#10">
+                                    <img src="images/gallery_07.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="10" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_07.jpg" alt="" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#11">
+                                    <img src="images/gallery_08.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="11" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_08.jpg" alt="" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#12">
+                                    <img src="images/gallery_09.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="12" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_09.jpg" alt="" />
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-6 co-xs-12 gal-item">
+                            <div class="box">
+                                <a href="#" data-toggle="modal" data-target="#13">
+                                    <img src="images/gallery_10.jpg" alt="" />
+                                </a>
+                                <div class="modal fade" id="13" tabindex="-1" role="dialog">
+                                    <div class="modal-dialog" role="document">
+                                        <div class="modal-content">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                                            <div class="modal-body">
+                                                <img src="images/gallery_10.jpg" alt="" />
+                                            </div>
+                                           
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- end gal-container -->
+                     
+           <div id="pricing" class="pricing-main pad-top-100 pad-bottom-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="block-title text-center">
+                        MAIN DAY EVENTS   
+                    </h2>
+                    <p><STRONG>ALL EVENTS WILL BE CARRIED OUT IN CENTRAL LAWN </STRONG></p>
+                    <p><STRONG>Exciting prices to win!!! </STRONG></p>
+                
+                </div>
+            
+                    </div>  
+                    <!-- item -->
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4 col-sm-4 text-center" align="center">
+                        <div class="panel panel-pricing">
+                            <div class="panel-heading">
+                                <div class="pric-icon">
+                                    <img src="images/food.png" alt="" />
+                                </div>
+                                <h3>PLAY AND WIN</h3>
+                            </div>
+                            <ul class="list-group text-center">
+                                <li class="list-group-item"><i class="fa fa-check"></i>Master Chef</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i>Foodie fight</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i>Golgappa eating competition</li>
+                                <li class="list-group-item"><i class="fa fa-check"></i>Mad AD</li>
+                            </ul>     
+                        </div>
+                    </div>
+                 
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end pricing-main -->
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end gallery-main -->
+
+
+    <div id="blog" class="blog-main pad-top-100 pad-bottom-100 parallax">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h2 class="block-title text-center">
+					MEGA Events 	
+				</h2>
+                    <div class="blog-box clearfix">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="blog-block">
+                                    <div class="blog-img-box">
+                                        <img src="images/featured-image-01.jpg" alt="" />
+                                        <div class="overlay">
+                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-dit">
+                                        <p style="color: black"><span>22,Feburary,2020</span></p>
+                                        <h2>Foodfie</h2>
+                                        <h5 style="color: black">On Day Event</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <div class="col-md-6 col-sm-6">
+                                <div class="blog-block">
+                                    <div class="blog-img-box">
+                                        <img src="images/featured-image-02.jpg" alt="" />
+                                        <div class="overlay">
+                                            <a href=""><i class="fa fa-link" aria-hidden="true"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="blog-dit">
+                                        <p style="color: black"><span>22 Feburary, 2020</span></p>
+                                        <h2>NITJ Matser Chef</h2>
+                                        <h5 style="color: black">Online Event On Instagram</h5>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        </div> 
+                   
+
+                </div>
+                <!-- end col -->
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+
+                </div>
+            </div>
+            <!-- end row -->
+        </div>
+        <!-- end container -->
+    </div>
+    <!-- end pricing-main -->
+
+    <!-- form is here -->
+    <div class="container bg-dark">
+            <div class="row" id="here">
+                <div class="form-reservations-box bg-dark">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="block-title text-center" style="margin-top: 20px;">
+                        Registrations           
+                    </h2>
+                        </div>
+                        <h4 class="form-title text-center">Registration FORM</h4>
+                        <p class="text-center">PLEASE FILL OUT ALL REQUIRED* FIELDS. THANKS!</p>
+
+                        <form id=""  method="POST"  name="contactfor" action="save.php">
+                                <div class="form-group">
+                                    <div class="row">
+                                     <div class="col-md-6">
+                                    <input id="fd" type="text" name="name" class="form-control" required placeholder="Name" required="required"  style="background-color: lightgrey;margin-top: 10px;border-style: dashed;border:1px dashed grey"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <input id="fd" type="email" name="email" class="form-control" required placeholder="Email" required="required" style="background-color: lightgrey;margin-top: 10px;border-style: dashed;border:1px dashed grey" />
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input id="fd" type="text" name="phn" class="form-control" required placeholder="Phone no." required="required" style="background-color: lightgrey;margin-top: 10px;border-style: dashed;border:1px dashed grey"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <input  id="fd" type="text" name="field" class="form-control" required placeholder="Field(e.g B.tech)" required="required"  style="background-color: lightgrey;margin-top: 10px;border-style: dashed;border:1px dashed grey"/>
+                                </div>
+                            </div>
+                            <!-- end col -->
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <input id="fd" type="text" name="clg" class="form-control" required placeholder="College Name" required="required" style="background-color: lightgrey;margin-top: 10px;border-style: dashed;border:1px dashed grey"/>
+                                </div>
+                                <div class="col-md-6">
+                                    <input  id="fd" type="text" name="yr" class="form-control" required placeholder="Year" required="required" style="background-color: lightgrey;margin-top: 10px;border-style: dashed;border:1px dashed grey" />
+                                </div>
+                            </div>
+                            <div class="row text-center">
+                                <input type="submit" onclick="main();" value="Register" style="background-color: red;color:white;font-size: 20px;border-style: none;margin-top: 20px;border-radius: 10px;" />
+                            </div>
+                        <!-- </div> -->
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+        
+
+    <div id="footer" class="footer-main">
+        <div class="footer-news pad-top-100 pad-bottom-70 parallax">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                        <div class="wow fadeIn" data-wow-duration="1s" data-wow-delay="0.1s">
+                            <h2 class="ft-title color-white text-center">HELP US TO BECOME BETTER</h2>
+                            <p> We would love to hear from you</p>
+                        </div>
+                        <form>
+                            <input type="email" placeholder="Leave your message here">
+                            <a href="#" class="orange-btn"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></a>
+                        </form>
+                    </div>
+                    <!-- end col -->
+                </div>
+                <!-- end row -->
+            </div>
+            <!-- end container -->
+        </div>
+        
+   
+        <div class="footer-box pad-top-70">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-in-main">
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="footer-box-a">
+                                <h3>Social Media</h3>
+                               
+                                <ul class="socials-box footer-socials pull-left">
+                                    <li>
+                                        <a href="https://www.facebook.com/nitjfoodfestival/">
+                                            <div class="social-circle-border"><i class="fa  fa-facebook"></i></div>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://instagram.com/nitjfoodfestival?igshid=1y8xz4nbo08j">
+                                            <div class="social-circle-border"><i class="fa fa-instagram"></i></div>
+                                        </a>
+                                    </li>
+                                    
+                                </ul>
+
+                            </div>
+                            <!-- end footer-box-a -->
+                        </div>
+                        
+                        </div>
+                        <!-- end col -->
+                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Contact Us</h3>
+                                
+                                <p>
+                                    <i class="fa fa-mobile" aria-hidden="true"></i>
+                                    <span>
+                                    +91 9113342050 
+                                </span>
+                               
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
+                                    <span><a href="#">nitjfoodfestival@gmail.com</a></span>
+                                </p>
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        <!-- go -->
+                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                            <div class="footer-box-c">
+                                <h3>Developed by</h3>
+                                <p>
+                                 <a href="https://www.linkedin.com/in/kunal-garg-0b199517a">Kunal Garg</a><br><a href="https://www.linkedin.com/in/rahul-duvedi-a49ba4187">Rahul Duvedi</a>
+                                </p>
+                                
+                            </div>
+                            <!-- end footer-box-c -->
+                        </div>
+                        
+                       
+                            <!-- end footer-box-d -->
+                        </div>
+                        <!-- end col -->
+                    </div>
+                    <!-- end footer-in-main -->
+                </div>
+                <!-- end row -->
+            </div>
+            
+            <!-- end copyright-main -->
+        </div>
+        <!-- end footer-box -->
+    </div>
+    <!-- end footer-main -->
+    <a href="#" class="scrollup" style="display: none;">Scroll</a>
+
+    <div class="container-fluid" id="sponsor" style="margin-top: 0px;height: 200px">
+        <div class="row" style="background:   #ff661a">
+            <h1 class="text-center display-1" style="color:white"><i>Our Sponsors</i></h1>
+        </div>
+        <div class="row">
+            <div class="col-md-4 text-center">
+            <img src="images/bonn.jpg"  height="100" width="100" style="margin-right: 20px;margin-top: 20px">
+        </div>
+         <div class="col-md-4 text-center">
+            <img src="images/Rapido.png" height="100" width="100" style="margin-top: 20px;margin-left: 20px;" /> <br>
+           <b>   Rapido</b>
+        </div>
+         <div class="col-md-4 text-center">
+            <img src="images/bbq.png"  height="100" width="100" style="margin-top: 20px;margin-left: 20px" />
+        </div>
+            <img src=""/>
+        </div>
+    </div>
+
+    <!-- copyright -->
+    <!-- end container -->
+            <div  class="copyright-main" style="margin-top: 0px !important">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <h6 class="copy-title"> Copyright &copy; 2020 NFF </a> </h6>
+                        </div>
+                    </div>
+                    <!-- end row -->
+                </div>
+                <!-- end container -->
+            </div>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>
